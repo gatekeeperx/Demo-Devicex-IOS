@@ -1,0 +1,15 @@
+{
+  "originHash" : "28edc60c85d9b49cb4a18b6e72427df1d6388d01d57773cd2a391c1b649b73de",
+  "pins" : [
+    {
+      "identity" : "devicex-ios-distribution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gatekeeperx/devicex-ios-distribution.git",
+      "state" : {
+        "revision" : "b7b7d72757c1d992de327713fd69de817cf0a140",
+        "version" : "1.0.7"
+      }
+    }
+  ],
+  "version" : 3
+}
