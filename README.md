@@ -9,7 +9,7 @@ A demonstration iOS application showcasing the integration of **GatekeeperX Devi
 ### 1. Installation via SPM
 Add DeviceX to your Xcode project using Swift Package Manager (`File > Add Package Dependencies...`):
 - **URL**: `https://github.com/gatekeeperx/devicex-ios-distribution.git`
-- **Dependency Rule**: Up to Next Major Version (`1.0.7`+)
+- **Dependency Rule**: Up to Next Major Version (`1.0.10`+)
 
 ### 2. Initialization
 Import `DeviceX` and configure it globally when your app starts (e.g., in your `App` struct or `AppDelegate`):
@@ -65,4 +65,3 @@ dx.sendEventAsync(name: "item_click", properties: [
 > **Note on Concurrency**: 
 > - **Initialization** (`Devicex.configureGloballyAsync`) requires a `Task {}` block because it is an `async` function and must be called from an asynchronous context, such as outside of the main `App` initializer.
 > - **Event Tracking** (`sendEventAsync`) is executed synchronously and returns via a completion handler. Therefore, it **does not** need to be wrapped in a `Task {}`.
-# Demo-Devicex-IOS

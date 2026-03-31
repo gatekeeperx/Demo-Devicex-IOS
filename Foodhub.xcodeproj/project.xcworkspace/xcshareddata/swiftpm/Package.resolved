@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/gatekeeperx/devicex-ios-distribution.git",
       "state" : {
-        "revision" : "b7b7d72757c1d992de327713fd69de817cf0a140",
-        "version" : "1.0.7"
+        "revision" : "65c1ca4a1ac67252ddf14e3d6aae42ddeede78a6",
+        "version" : "1.0.10"
       }
     }
   ],
