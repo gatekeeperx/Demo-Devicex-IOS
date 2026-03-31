@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74D64F762F737352004AA134 /* Devicex in Frameworks */ = {isa = PBXBuildFile; productRef = 74D64F752F737352004AA134 /* Devicex */; };
+		745733022F7C194A00BC897A /* Devicex in Frameworks */ = {isa = PBXBuildFile; productRef = 745733012F7C194A00BC897A /* Devicex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D64F762F737352004AA134 /* Devicex in Frameworks */,
+				745733022F7C194A00BC897A /* Devicex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 			);
 			name = Foodhub;
 			packageProductDependencies = (
-				74D64F752F737352004AA134 /* Devicex */,
+				745733012F7C194A00BC897A /* Devicex */,
 			);
 			productName = Foodhub;
 			productReference = 74D2AED12F579A00006B4014 /* Foodhub.app */;
@@ -98,7 +98,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					74D2AED02F579A00006B4014 = {
 						CreatedOnToolsVersion = 26.2;
@@ -115,7 +115,7 @@
 			mainGroup = 74D2AEC82F579A00006B4014;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				74D64F742F737352004AA134 /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */,
+				745733002F7C194A00BC897A /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 74D2AED22F579A00006B4014 /* Products */;
@@ -187,7 +187,11 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Foodhub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Foodhub",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -208,6 +212,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -253,7 +258,11 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Foodhub";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Foodhub",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -267,6 +276,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
 				VALIDATE_PRODUCT = YES;
@@ -288,6 +298,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,20 +373,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		74D64F742F737352004AA134 /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */ = {
+		745733002F7C194A00BC897A /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gatekeeperx/devicex-ios-distribution.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.7;
+				minimumVersion = 1.0.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		74D64F752F737352004AA134 /* Devicex */ = {
+		745733012F7C194A00BC897A /* Devicex */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 74D64F742F737352004AA134 /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */;
+			package = 745733002F7C194A00BC897A /* XCRemoteSwiftPackageReference "devicex-ios-distribution" */;
 			productName = Devicex;
 		};
 /* End XCSwiftPackageProductDependency section */
