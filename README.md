@@ -9,7 +9,7 @@ A demonstration iOS application showcasing the integration of **GatekeeperX Devi
 ### 1. Installation via SPM
 Add DeviceX to your Xcode project using Swift Package Manager (`File > Add Package Dependencies...`):
 - **URL**: `https://github.com/gatekeeperx/devicex-ios-distribution.git`
-- **Dependency Rule**: Up to Next Major Version (`1.0.10`+)
+- **Dependency Rule**: Up to Next Major Version (`1.0.12`)
 
 ### 2. Initialization
 Import `DeviceX` and configure it globally when your app starts (e.g., in your `App` struct or `AppDelegate`):
